@@ -44,7 +44,7 @@ const BookingModal = ({ isOpen, onClose }) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ data: { ...formData, createdAt: new Date().toISOString() } }),
+        body: JSON.stringify({ ...formData, createdAt: new Date().toISOString() }),
       })
 
       // With no-cors mode, we can't read the response, but if no error thrown, assume success
