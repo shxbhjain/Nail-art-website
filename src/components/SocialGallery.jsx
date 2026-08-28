@@ -23,12 +23,12 @@ const SocialGallery = () => {
         >
           <h2>Follow the Studio</h2>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/vanshikaglamstudio"
             target="_blank"
             rel="noopener noreferrer"
             className="social-handle"
           >
-            @glamstudio
+            @vanshikaGlamStudio
           </a>
         </motion.div>
 
