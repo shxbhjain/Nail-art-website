@@ -33,12 +33,12 @@ const Footer = () => {
           <div className="footer-section">
             <h5 className="footer-title">Visit</h5>
             <address className="footer-address">
-              <p>Ekta Vihar</p>
               <p>Zirakpur, Punjab</p>
               <p className="footer-contact-item">
                 <a href="mailto:GlamStudioArt@gmail.com">GlamStudioArt@gmail.com</a>
               </p>
               <p>Mon–Sun: 9am–9pm</p>
+              <p className="footer-contact-item">+91 98765 43210</p>
             </address>
           </div>
 
