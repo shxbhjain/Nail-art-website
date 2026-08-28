@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNE NAILS - Site Preview</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+            background: #FAF8F5;
+            color: #3A2F2B;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid #E0DCD5;
+            padding-bottom: 2rem;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+            font-weight: 300;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            color: #3A2F2B;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #6B625A;
+            margin-bottom: 2rem;
+        }
+        .url {
+            background: #3A2F2B;
+            color: #FAF8F5;
+            padding: 0.75rem 1.5rem;
+            border-radius: 2px;
+            font-family: monospace;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .url:hover {
+            background: #2B2826;
+        }
+        .sections {
+            display: grid;
+            gap: 2rem;
+        }
+        .section {
+            background: white;
+            border: 1px solid #E0DCD5;
+            border-radius: 4px;
+            padding: 2rem;
+            box-shadow: 0 4px 12px rgba(43, 40, 38, 0.08);
+        }
+        .section h3 {
+            font-family: 'Georgia', serif;
+            font-size: 1.75rem;
+            margin-top: 0;
+            color: #3A2F2B;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .section h3::before {
+            content: '✦';
+            color: #D4B5A8;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: #F5F3EF;
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+        .feature h4 {
+            margin-top: 0;
+            color: #3A2F2B;
+            font-weight: 600;
+        }
+        .tech {
+            margin-top: 3rem;
+            background: #E8E3DC;
+            padding: 2rem;
+            border-radius: 4px;
+        }
+        .tech h3 {
+            text-align: center;
+        }
+        .tech-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .tech-item {
+            background: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 500;
+            border: 1px solid #C9C0B5;
+        }
+        .preview-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .preview-card {
+            background: linear-gradient(135deg, #E8E3DC 0%, #C9C0B5 100%);
+            height: 200px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #3A2F2B;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LUNE NAILS</h1>
+            <p class="subtitle">A premium nail art website with editorial aesthetic</p>
+            <a href="http://localhost:5173" class="url" target="_blank">http://localhost:5173</a>
+        </header>
+
+        <div class="sections">
+            <div class="section">
+                <h3>Site Overview</h3>
+                <p>A fully responsive luxury nail art studio website built with React + Vite + Framer Motion. The design follows a sophisticated editorial aesthetic with warm ivory palette, elegant serif typography, and intentional whitespace.</p>
+
+                <div class="preview-images">
+                    <div class="preview-card">Hero Section<br>Editorial Layout</div>
+                    <div class="preview-card">Featured Gallery<br>Asymmetrical Grid</div>
+                    <div class="preview-card">Services<br>Premium Cards</div>
+                    <div class="preview-card">Booking Modal<br>Complete Form</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Key Features</h3>
+                <div class="features">
+                    <div class="feature">
+                        <h4>Editorial Design System</h4>
+                        <p>Warm ivory palette with elegant serif typography, generous whitespace, and intentional visual hierarchy</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Interactive Gallery</h4>
+                        <p>Asymmetrical grid layout with lightbox functionality and mood-based filtering system</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Smooth Animations</h4>
+                        <p>Framer Motion-powered transitions with slow, elegant timing (400-800ms)</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Booking System</h4>
+                        <p>Complete appointment booking modal with service selection and date picker</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Responsive Layout</h4>
+                        <p>Fully responsive across desktop, tablet, and mobile with accessibility compliance</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Testimonial Carousel</h4>
+                        <p>Smooth client reviews carousel with manual navigation and star ratings</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Component Architecture</h3>
+                <ul>
+                    <li><strong>Navbar</strong> - Sticky navigation with mobile hamburger menu</li>
+                    <li><strong>Hero</strong> - Editorial hero section with dual CTAs and scroll indicator</li>
+                    <li><strong>FeaturedWork</strong> - Gallery with lightbox and asymmetrical grid layout</li>
+                    <li><strong>Services</strong> - Four premium service cards with hover animations</li>
+                    <li><strong>MoodFilter</strong> - Interactive mood-based gallery filtering</li>
+                    <li><strong>About</strong> - Split layout about section with brand philosophy</li>
+                    <li><strong>Testimonials</strong> - Carousel with client reviews and navigation</li>
+                    <li><strong>SocialGallery</strong> - Instagram-style social feed</li>
+                    <li><strong>BookingCTA</strong> - Final call-to-action section</li>
+                    <li><strong>BookingModal</strong> - Complete appointment booking form</li>
+                    <li><strong>Footer</strong> - Site footer with navigation, contact, and social links</li>
+                </ul>
+            </div>
+
+            <div class="tech">
+                <h3>Technology Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">React 18</div>
+                    <div class="tech-item">Vite</div>
+                    <div class="tech-item">Framer Motion</div>
+                    <div class="tech-item">CSS Modules</div>
+                    <div class="tech-item">Responsive Design</div>
+                    <div class="tech-item">Accessibility</div>
+                    <div class="tech-item">Modern CSS</div>
+                    <div class="tech-item">Semantic HTML</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>Design System</h3>
+                <p><strong>Colors:</strong> Ivory (#FAF8F5), Warm White (#F5F3EF), Beige (#E8E3DC), Taupe (#C9C0B5), Blush (#D4B5A8), Espresso (#3A2F2B)</p>
+                <p><strong>Typography:</strong> Cormorant Garamond (serif headings), Inter (sans-serif body)</p>
+                <p><strong>Transitions:</strong> Slow, elegant animations (200-800ms) with consistent easing</p>
+                <p><strong>Spacing:</strong> Consistent spacing scale with generous whitespace</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

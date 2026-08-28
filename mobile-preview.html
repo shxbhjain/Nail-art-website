@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUNE NAILS - Mobile Responsive Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #FAF8F5;
+            color: #3A2F2B;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        .subtitle {
+            text-align: center;
+            color: #6B625A;
+            margin-bottom: 3rem;
+            font-size: 1.125rem;
+        }
+        .devices {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        .device {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .device-label {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #3A2F2B;
+        }
+        .phone-frame {
+            background: #2B2826;
+            border-radius: 40px;
+            padding: 12px;
+            box-shadow: 0 20px 60px rgba(43, 40, 38, 0.3);
+        }
+        .phone-frame.mobile {
+            width: 375px;
+            height: 667px;
+            border-radius: 30px;
+            padding: 8px;
+        }
+        .phone-frame.tablet {
+            width: 768px;
+            height: 500px;
+            border-radius: 20px;
+        }
+        .screen {
+            background: #FAF8F5;
+            border-radius: inherit;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .screen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            transform-origin: top left;
+        }
+        .screen.mobile iframe {
+            transform: scale(0.5);
+        }
+        .screen.tablet iframe {
+            transform: scale(0.7);
+        }
+        .mobile-note {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #E8E3DC;
+            border-radius: 8px;
+        }
+        .mobile-note h3 {
+            font-family: 'Georgia', serif;
+            margin-bottom: 1rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #E0DCD5;
+        }
+        .feature h4 {
+            color: #3A2F2B;
+            margin-bottom: 0.5rem;
+        }
+        .feature p {
+            font-size: 0.9375rem;
+            color: #6B625A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 LUNE NAILS</h1>
+        <p class="subtitle">Fully Responsive Design - Desktop, Tablet & Mobile</p>
+
+        <div class="devices">
+            <div class="device">
+                <span class="device-label">📱 Mobile (375px)</span>
+                <div class="phone-frame mobile">
+                    <div class="screen mobile">
+                        <iframe src="http://localhost:5173"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="device">
+                <span class="device-label">📟 Tablet (768px)</span>
+                <div class="phone-frame tablet">
+                    <div class="screen tablet">
+                        <iframe src="http://localhost:5173"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-note">
+            <h3>Mobile Features</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>📱 Hamburger Menu</h4>
+                    <p>Clean mobile navigation with smooth slide-in menu</p>
+                </div>
+                <div class="feature">
+                    <h4>📐 Responsive Grid</h4>
+                    <p>Single column layout adapts automatically</p>
+                </div>
+                <div class="feature">
+                    <h4>👆 Touch-Friendly</h4>
+                    <p>44px+ touch targets for easy tapping</p>
+                </div>
+                <div class="feature">
+                    <h4>🔤 Readable Text</h4>
+                    <p>Proper font scaling on all screen sizes</p>
+                </div>
+                <div class="feature">
+                    <h4>🖼️ Optimized Images</h4>
+                    <p>Images scale proportionally on mobile</p>
+                </div>
+                <div class="feature">
+                    <h4>⚡ Fast Loading</h4>
+                    <p>Lightweight code for quick mobile load</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

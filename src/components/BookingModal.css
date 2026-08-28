@@ -1,0 +1,148 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(43, 40, 38, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: relative;
+  background-color: var(--ivory);
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 2px;
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close:hover {
+  color: var(--espresso);
+}
+
+.modal-header {
+  margin-bottom: var(--space-xl);
+  padding-right: var(--space-2xl);
+}
+
+.modal-header h3 {
+  font-size: 2rem;
+  margin-bottom: var(--space-sm);
+}
+
+.modal-header p {
+  color: var(--text-secondary);
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-label {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.form-input {
+  padding: 0.875rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-primary);
+  background-color: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  transition: all var(--transition-fast);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--espresso);
+  background-color: var(--ivory);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+.btn-full {
+  width: 100%;
+  margin-top: var(--space-sm);
+}
+
+.form-note {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: calc(var(--space-sm) * -1);
+}
+
+@media (max-width: 640px) {
+  .modal-content {
+    padding: var(--space-xl) var(--space-md);
+    max-height: 100vh;
+    border-radius: 0;
+  }
+
+  .modal-header {
+    padding-right: var(--space-xl);
+  }
+
+  .modal-header h3 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Custom scrollbar for modal */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: var(--warm-white);
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--taupe);
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: var(--espresso);
+}

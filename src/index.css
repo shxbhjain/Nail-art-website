@@ -1,0 +1,298 @@
+/* ===================================
+   DESIGN SYSTEM
+   =================================== */
+
+:root {
+  /* Colors */
+  --ivory: #FAF8F5;
+  --warm-white: #F5F3EF;
+  --beige: #E8E3DC;
+  --taupe: #C9C0B5;
+  --blush: #D4B5A8;
+  --espresso: #3A2F2B;
+  --charcoal: #2B2826;
+  --text-primary: #2B2826;
+  --text-secondary: #6B625A;
+  --border: #E0DCD5;
+  --button-primary: #8B7355;
+  --button-primary-hover: #7A6548;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+
+  /* Layout */
+  --container-width: 1400px;
+  --content-width: 1200px;
+  --narrow-width: 800px;
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-base: 400ms ease;
+  --transition-slow: 600ms ease;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(43, 40, 38, 0.06);
+  --shadow-md: 0 4px 12px rgba(43, 40, 38, 0.08);
+  --shadow-lg: 0 8px 24px rgba(43, 40, 38, 0.1);
+}
+
+/* ===================================
+   RESET & BASE STYLES
+   =================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--ivory);
+  overflow-x: hidden;
+}
+
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--espresso);
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.text-lg {
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  line-height: 1.7;
+}
+
+.text-sm {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.text-xs {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+/* ===================================
+   BUTTONS
+   =================================== */
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all var(--transition-base);
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--button-primary);
+  color: var(--ivory);
+  border-color: var(--button-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--button-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--espresso);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--warm-white);
+  border-color: var(--taupe);
+}
+
+.btn-link {
+  padding: 0;
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--transition-fast);
+}
+
+.btn-link:hover {
+  color: var(--blush);
+}
+
+/* ===================================
+   LAYOUT
+   =================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-narrow {
+  max-width: var(--narrow-width);
+}
+
+.section {
+  padding: var(--space-4xl) 0;
+}
+
+.section-sm {
+  padding: var(--space-3xl) 0;
+}
+
+.section-lg {
+  padding: 6rem 0;
+}
+
+/* ===================================
+   UTILITIES
+   =================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.line-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+  margin: var(--space-3xl) 0;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 5rem;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+
+  .section-lg {
+    padding: var(--space-4xl) 0;
+  }
+}
+
+/* ===================================
+   FOCUS STATES
+   =================================== */
+
+*:focus-visible {
+  outline: 2px solid var(--espresso);
+  outline-offset: 4px;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--espresso);
+  outline-offset: 4px;
+}
+
+/* ===================================
+   IMAGES
+   =================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
