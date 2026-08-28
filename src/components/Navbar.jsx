@@ -39,7 +39,7 @@ const Navbar = ({ onBookingClick }) => {
     >
       <div className="navbar-container container">
         <a href="#" className="navbar-logo">
-          LUNE NAILS
+          GlamStudio
         </a>
 
         {/* Desktop Navigation */}

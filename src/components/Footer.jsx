@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-content">
           {/* Brand */}
           <div className="footer-section">
-            <h4 className="footer-logo">LUNE NAILS</h4>
+            <h4 className="footer-logo">GlamStudio</h4>
             <p className="footer-tagline text-sm">
               Thoughtfully designed manicures
               <br />
@@ -34,11 +34,11 @@ const Footer = () => {
             <h5 className="footer-title">Visit</h5>
             <address className="footer-address">
               <p>123 Studio Lane</p>
-              <p>New York, NY 10012</p>
+              <p>Zirakpur, Punjab</p>
               <p className="footer-contact-item">
-                <a href="mailto:hello@lunenails.com">hello@lunenails.com</a>
+                <a href="mailto:GlamStudioArt@gmail.com">GlamStudioArt@gmail.com</a>
               </p>
-              <p>Tue–Sat: 10am–7pm</p>
+              <p>Mon–Sun: 9am–9pm</p>
             </address>
           </div>
 
@@ -79,7 +79,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="text-xs">
-            © {currentYear} LUNE NAILS. All rights reserved.
+            © {currentYear} GlamStudio. All rights reserved.
           </p>
           <div className="footer-legal">
             <a href="#" className="text-xs">Privacy Policy</a>

@@ -28,7 +28,7 @@ const SocialGallery = () => {
             rel="noopener noreferrer"
             className="social-handle"
           >
-            @lunenails
+            @glamstudio
           </a>
         </motion.div>
 

@@ -33,7 +33,7 @@ const About = () => {
             </h2>
             <div className="about-description">
               <p className="text-lg">
-                LUNE NAILS is a space for thoughtful beauty, expressive details,
+                GlamStudio is a space for thoughtful beauty, expressive details,
                 and nails designed to feel uniquely yours.
               </p>
               <p>
