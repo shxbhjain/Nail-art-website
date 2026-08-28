@@ -38,7 +38,7 @@ const Footer = () => {
                 <a href="mailto:GlamStudioArt@gmail.com">GlamStudioArt@gmail.com</a>
               </p>
               <p>Mon–Sun: 9am–9pm</p>
-              <p className="footer-contact-item">+91 98765 43210</p>
+              <p className="footer-contact-item">+91 8360398882</p>
             </address>
           </div>
 

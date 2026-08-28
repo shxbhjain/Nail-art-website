@@ -53,13 +53,6 @@ const Navbar = ({ onBookingClick }) => {
           ))}
         </ul>
 
-        <button
-          className="btn btn-primary navbar-cta"
-          onClick={onBookingClick}
-        >
-          Book Appointment
-        </button>
-
         {/* Mobile Menu Button */}
         <button
           className="navbar-mobile-toggle"
@@ -102,15 +95,6 @@ const Navbar = ({ onBookingClick }) => {
                 </motion.li>
               ))}
             </ul>
-            <button
-              className="btn btn-primary navbar-mobile-cta"
-              onClick={() => {
-                setIsMobileMenuOpen(false)
-                onBookingClick()
-              }}
-            >
-              Book Appointment
-            </button>
           </motion.div>
         )}
       </AnimatePresence>
