@@ -9,7 +9,7 @@ const nailDesigns = [
     category: 'Chrome',
     price: '₹999',
     image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&auto=format&fit=crop&q=80',
-    mood: 'bold'
+    mood: 'chrome'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const nailDesigns = [
     category: 'French',
     price: '₹999',
     image: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&auto=format&fit=crop&q=80',
-    mood: 'minimal'
+    mood: 'french'
   },
   {
     id: 3,
@@ -50,6 +50,22 @@ const nailDesigns = [
     price: '₹799',
     image: 'https://images.unsplash.com/photo-1696341995063-b60c66e85838?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     mood: 'floral'
+  },
+  {
+    id: 7,
+    name: 'Minimal Elegance',
+    category: 'Minimal',
+    price: '₹699',
+    image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&auto=format&fit=crop&q=80',
+    mood: 'minimal'
+  },
+  {
+    id: 8,
+    name: 'Bridal Bliss',
+    category: 'Bridal',
+    price: '₹1499',
+    image: 'https://images.unsplash.com/photo-1735236007245-9dc6e28bbe56?q=80&w=1046&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    mood: 'bridal'
   }
 ]
 
