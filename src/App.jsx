@@ -29,12 +29,12 @@ function App() {
       <Navbar onBookingClick={() => setIsBookingOpen(true)} />
       <main>
         <Hero onBookingClick={() => setIsBookingOpen(true)} />
-        <FeaturedWork selectedMood={selectedMood} />
-        <Services />
         <MoodFilter
           selectedMood={selectedMood}
           onMoodSelect={setSelectedMood}
         />
+        <FeaturedWork selectedMood={selectedMood} />
+        <Services />
         <About />
         <Testimonials />
         <SocialGallery />
