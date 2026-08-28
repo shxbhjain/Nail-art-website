@@ -7,7 +7,7 @@ const nailDesigns = [
     id: 1,
     name: 'Chrome Aura',
     category: 'Chrome',
-    price: '$85',
+    price: '₹999',
     image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&auto=format&fit=crop&q=80',
     mood: 'bold'
   },
@@ -15,7 +15,7 @@ const nailDesigns = [
     id: 2,
     name: 'French Noir',
     category: 'French',
-    price: '$70',
+    price: '₹999',
     image: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=800&auto=format&fit=crop&q=80',
     mood: 'minimal'
   },
@@ -23,7 +23,7 @@ const nailDesigns = [
     id: 3,
     name: 'Pearl Veil',
     category: 'Chrome',
-    price: '$90',
+    price: '₹1199',
     image: 'https://images.unsplash.com/photo-1735236007245-9dc6e28bbe56?q=80&w=1046&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     mood: 'romantic'
   },
@@ -31,7 +31,7 @@ const nailDesigns = [
     id: 4,
     name: 'Matcha Marble',
     category: 'Abstract',
-    price: '$75',
+    price: '₹75',
     image: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&auto=format&fit=crop&q=80',
     mood: 'abstract'
   },
@@ -39,7 +39,7 @@ const nailDesigns = [
     id: 5,
     name: 'Burgundy Gloss',
     category: 'Bold',
-    price: '$65',
+    price: '₹599',
     image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=800&auto=format&fit=crop&q=80',
     mood: 'bold'
   },
@@ -47,7 +47,7 @@ const nailDesigns = [
     id: 6,
     name: 'Micro Florals',
     category: 'Floral',
-    price: '$95',
+    price: '₹799',
     image: 'https://images.unsplash.com/photo-1696341995063-b60c66e85838?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     mood: 'floral'
   }

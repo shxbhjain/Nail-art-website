@@ -7,28 +7,28 @@ const services = [
     name: 'Signature Manicure',
     description: 'A refined manicure tailored to your natural nails.',
     duration: '60 min',
-    price: 'From $65'
+    price: 'Starting from ₹1099'
   },
   {
     id: 2,
     name: 'Custom Nail Art',
     description: 'One-of-a-kind designs created around your personal style.',
     duration: '90 min',
-    price: 'From $85'
+    price: 'Starting from ₹499'
   },
   {
     id: 3,
     name: 'Gel Extensions',
     description: 'Elegant extensions designed for length, structure, and durability.',
     duration: '120 min',
-    price: 'From $95'
+    price: 'Starting from ₹999'
   },
   {
     id: 4,
     name: 'Bridal Nails',
     description: 'Timeless nail designs for weddings and special occasions.',
     duration: '90 min',
-    price: 'From $110'
+    price: '₹1499'
   }
 ]
 
