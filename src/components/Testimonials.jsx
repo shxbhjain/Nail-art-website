@@ -6,22 +6,22 @@ const testimonials = [
   {
     id: 1,
     quote: "The most beautiful set I've ever had. Every tiny detail felt intentional.",
-    author: 'Sarah Chen',
-    location: 'New York',
+    author: 'Mehak',
+    location: 'Surat',
     rating: 5
   },
   {
     id: 2,
     quote: "Not just nails—an experience. The attention to detail is unmatched.",
-    author: 'Emily Rodriguez',
-    location: 'Los Angeles',
+    author: 'Ridhi',
+    location: 'Panchkula',
     rating: 5
   },
   {
     id: 3,
     quote: "My bridal nails were absolutely perfect. Elegant, timeless, and so me.",
-    author: 'Jessica Park',
-    location: 'San Francisco',
+    author: 'Nidhi',
+    location: 'Chandigarh',
     rating: 5
   }
 ]
