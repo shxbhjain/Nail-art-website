@@ -31,7 +31,7 @@ const nailDesigns = [
     id: 4,
     name: 'Matcha Marble',
     category: 'Abstract',
-    price: '₹75',
+    price: '₹599',
     image: 'https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=800&auto=format&fit=crop&q=80',
     mood: 'abstract'
   },

@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="footer-section">
             <h5 className="footer-title">Visit</h5>
             <address className="footer-address">
-              <p>123 Studio Lane</p>
+              <p>Ekta Vihar</p>
               <p>Zirakpur, Punjab</p>
               <p className="footer-contact-item">
                 <a href="mailto:GlamStudioArt@gmail.com">GlamStudioArt@gmail.com</a>

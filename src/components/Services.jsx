@@ -28,7 +28,7 @@ const services = [
     name: 'Bridal Nails',
     description: 'Timeless nail designs for weddings and special occasions.',
     duration: '90 min',
-    price: '₹1499'
+    price: 'Starting from ₹1499'
   }
 ]
 
